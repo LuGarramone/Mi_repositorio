@@ -1,0 +1,25 @@
+{
+  "name": "miproyecto",
+  "version": "1.0.0",
+  "description": "Hice el maqueteado con boostrap en todos los html pero perfeccioné para esta entrega el index.html y nosotros.hmtl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/style.css",
+		"watch-css": "nodemon -e scss -x \"npm     run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuGarramone/mi_repositorio.git"
+  },
+  "author": "lucila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuGarramone/mi_repositorio/issues"
+  },
+  "homepage": "https://github.com/LuGarramone/mi_repositorio#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,47 @@
+#nosotros{
+    font-weight: $textLight;
+    font-size: $textMd;
+    .info1{
+        @include cuadro ($border1, $mainColor);
+        border-radius: 50px;
+    }
+    .ventajas{
+        background-color: $mainColor;
+		padding: 20px 10px;
+    	border-radius: 40px;
+    	border: solid 1.8px $secondaryColor;
+   		margin-left: 20px;
+    	margin-right: 20px;
+        #caracteristicas::before{
+            content: "• ";
+        }
+        #caracteristicas::after{
+            content: "• ";
+        }
+        @media (min-width: 280px) and (max-width: 768px){
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    #ventajas{
+        @media (min-width: 280px) and (max-width: 576px){
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+    .imgCuadros{
+        padding-bottom: 40px;
+    }
+    .imgNeon{
+        width: 150px;
+    	border-radius: 150px;
+    	border: solid white 1.5px;
+    }
+    .neon{
+        @extend .info2;
+            border-radius: 50px;
+        p{
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+#footer1{
+    h3{
+        font-family: $fontSecondary;
+        color: $keyColor;
+    }
+    .pie{
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        a {
+            text-decoration: none;
+        }
+        @media (min-width: 280px) and (max-width: 500px){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .redes{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        width: $w-50;
+        @media (min-width: 280px) and (max-width: 500px){
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            width: 100%;
+        }
+    }
+    .contacto{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+        width: $w-50;
+        @media (min-width: 280px) and (max-width: 500px){
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            width: 100%;
+        }
+    }
+    .pieIcon{
+        width: 30px;
+        margin-left: 20px;
+    }
+    .gridMain{
+        @media (min-width: 280px) and (max-width: 500px){
+            display: grid; 
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(9, auto);
+            grid-template-areas: "nav"
+            "header"
+            "info"
+            "diseños"
+            "destacados"
+            "carteles"
+            "veladores"
+            "newsletter"
+            "footer";
+        }
+    }
+}

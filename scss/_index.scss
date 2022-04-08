@@ -1,0 +1,43 @@
+#dashboard{
+    font-weight: $textLight;
+    font-size: $textMd;
+    .info1{
+        @include cuadro ($border1, $mainColor);
+    }
+
+    .pink{
+        @include boton ($border, $keyColor);
+        &:hover{
+            background-color: $keyColor;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    h3{
+        font-family: $fontSecondary;
+        color: $keyColor;
+    }
+    h5:before{
+        content: "⸺⸺";
+        @media (min-width:373px) and (max-width: 480px){
+            content: "⸺";
+        }
+        @media (min-width: 280px) and (max-width: 372px){
+            content: "⸺⸺";
+        }
+    }
+    h5:after{
+        content: "⸺⸺";
+        @media (min-width: 373px) and (max-width: 480px){
+            content: "⸺";
+        }
+        @media (min-width: 280px) and (max-width: 372px){
+            content: "⸺⸺";
+        }
+    }
+    .carousel1{
+        @media (min-width: 280px) and (max-width: 576px){
+            margin-bottom: 15px;
+        }
+    }
+}

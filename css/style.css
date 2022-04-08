@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Josefin+Sans:wght@200;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(../pics/pattern2.png);
+  background-repeat: repeat;
+  background-attachment: fixed; }
+
+h1 {
+  font-family: 'Bree Serif', serif;
+  color: #f21b91; }
+
+h2 {
+  font-family: 'Bree Serif', serif;
+  color: #b073d9; }
+
+.info2, #nosotros .neon, #faqs .cuadro2 {
+  border: dotted 1.5px #b073d9;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+#navStyle {
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  font-weight: 200; }
+  #navStyle img {
+    width: 250px; }
+    @media (min-width: 280px) and (max-width: 360px) {
+      #navStyle img {
+        width: 150px; } }
+  #navStyle ul li {
+    list-style: none; }
+    #navStyle ul li a {
+      text-decoration: none; }
+      #navStyle ul li a:hover {
+        color: #f21b91;
+        font-weight: 400; }
+
+#dashboard {
+  font-weight: 200;
+  font-size: 1.2rem; }
+  #dashboard .info1 {
+    border: dotted #f21b91 1.5px;
+    background-color: rgba(0, 0, 0, 0.8); }
+  #dashboard .pink {
+    border: solid #f21b91 1.5px;
+    color: #f21b91;
+    background-color: black;
+    transition: background 0.2s; }
+    #dashboard .pink:hover {
+      background-color: #f21b91;
+      color: white;
+      cursor: pointer; }
+  #dashboard h3 {
+    font-family: "Bree Serif", serif;
+    color: #f21b91; }
+  #dashboard h5:before {
+    content: "⸺⸺"; }
+    @media (min-width: 373px) and (max-width: 480px) {
+      #dashboard h5:before {
+        content: "⸺"; } }
+    @media (min-width: 280px) and (max-width: 372px) {
+      #dashboard h5:before {
+        content: "⸺⸺"; } }
+  #dashboard h5:after {
+    content: "⸺⸺"; }
+    @media (min-width: 373px) and (max-width: 480px) {
+      #dashboard h5:after {
+        content: "⸺"; } }
+    @media (min-width: 280px) and (max-width: 372px) {
+      #dashboard h5:after {
+        content: "⸺⸺"; } }
+  @media (min-width: 280px) and (max-width: 576px) {
+    #dashboard .carousel1 {
+      margin-bottom: 15px; } }
+
+#footer1 h3 {
+  font-family: "Bree Serif", serif;
+  color: #f21b91; }
+
+#footer1 .pie {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
+  padding-bottom: 16px; }
+  #footer1 .pie a {
+    text-decoration: none; }
+  @media (min-width: 280px) and (max-width: 500px) {
+    #footer1 .pie {
+      flex-direction: column;
+      align-items: center; } }
+
+#footer1 .redes {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  width: 50%; }
+  @media (min-width: 280px) and (max-width: 500px) {
+    #footer1 .redes {
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      width: 100%; } }
+
+#footer1 .contacto {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  width: 50%; }
+  @media (min-width: 280px) and (max-width: 500px) {
+    #footer1 .contacto {
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      width: 100%; } }
+
+#footer1 .pieIcon {
+  width: 30px;
+  margin-left: 20px; }
+
+@media (min-width: 280px) and (max-width: 500px) {
+  #footer1 .gridMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas: "nav" "header" "info" "diseños" "destacados" "carteles" "veladores" "newsletter" "footer"; } }
+
+#tienda .secondNav {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom-right-radius: 40px; }
+  #tienda .secondNav ul li {
+    list-style-type: none;
+    font-family: "Bree Serif", serif;
+    color: #f21b91;
+    font-size: 1.5rem; }
+    @media (min-width: 280px) and (max-width: 360px) {
+      #tienda .secondNav ul li {
+        font-size: 1.2rem; } }
+    #tienda .secondNav ul li a {
+      text-decoration: none;
+      color: white; }
+      #tienda .secondNav ul li a:hover {
+        font-weight: 400; }
+
+#tienda figure {
+  margin: 10px 0;
+  background-color: black;
+  border-radius: 30px; }
+  #tienda figure:hover {
+    transform: scale(1.02);
+    cursor: pointer; }
+  #tienda figure img {
+    border-radius: 30px;
+    padding: 14px 14px;
+    width: 280px; }
+    @media (min-width: 280px) and (max-width: 360px) {
+      #tienda figure img {
+        width: 200px; } }
+  #tienda figure figcaption {
+    color: white;
+    padding: 5px 0;
+    text-align: center; }
+  #tienda figure p {
+    color: #b073d9;
+    padding: 5px 5px;
+    text-align: center; }
+
+#tienda .descuento {
+  background-color: rgba(242, 27, 145, 0.5); }
+
+#tienda .pagos {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+#nosotros {
+  font-weight: 200;
+  font-size: 1.2rem; }
+  #nosotros .info1 {
+    border: dotted #f21b91 1.5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50px; }
+  #nosotros .ventajas {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 10px;
+    border-radius: 40px;
+    border: solid 1.8px #b073d9;
+    margin-left: 20px;
+    margin-right: 20px; }
+    #nosotros .ventajas #caracteristicas::before {
+      content: "• "; }
+    #nosotros .ventajas #caracteristicas::after {
+      content: "• "; }
+    @media (min-width: 280px) and (max-width: 768px) {
+      #nosotros .ventajas {
+        margin-top: 10px;
+        margin-bottom: 10px; } }
+  @media (min-width: 280px) and (max-width: 576px) {
+    #nosotros #ventajas {
+      margin-left: 15px;
+      margin-right: 15px; } }
+  #nosotros .imgCuadros {
+    padding-bottom: 40px; }
+  #nosotros .imgNeon {
+    width: 150px;
+    border-radius: 150px;
+    border: solid white 1.5px; }
+  #nosotros .neon {
+    border-radius: 50px; }
+    #nosotros .neon p {
+      margin-bottom: 0; }
+
+#faqs {
+  font-size: 1.2rem; }
+  #faqs .cuadro1 {
+    border: dotted #f21b91 1.5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50px; }
+  #faqs .cuadro2 {
+    border-radius: 50px; }
+  #faqs #textInfo {
+    line-height: 1.2; }
+  #faqs .text-pink {
+    color: #fd8fcc; }
+  #faqs .text-violet {
+    color: #dfb3fd; }
+
+#contactoMain {
+  font-size: 1.2rem; }
+  #contactoMain .info1 {
+    border: dotted #f21b91 1.5px;
+    background-color: rgba(0, 0, 0, 0.8); }
+  #contactoMain .pink {
+    border: solid #f21b91 1.5px;
+    color: #f21b91;
+    background-color: black;
+    transition: background 0.2s; }
+    #contactoMain .pink:hover {
+      background-color: #f21b91;
+      color: white;
+      cursor: pointer; }
+  #contactoMain #informacion {
+    background-color: rgba(242, 27, 145, 0.25);
+    border: dotted 1.5px #f21b91;
+    padding: 10px;
+    box-sizing: border-box; }

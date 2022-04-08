@@ -1,0 +1,20 @@
+#contactoMain{
+    font-size: $textMd;
+    .info1{
+        @include cuadro ($border1, $mainColor);
+    }
+    .pink{
+        @include boton ($border, $keyColor);
+        &:hover{
+            background-color: $keyColor;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    #informacion{
+        background-color: rgba(242, 27, 145, 0.25);
+    	border: dotted 1.5px $keyColor;
+   		padding: 10px;
+    	box-sizing: border-box;
+    }
+}

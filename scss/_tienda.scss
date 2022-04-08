@@ -1,0 +1,57 @@
+#tienda{
+    .secondNav{
+        background-color: $mainColor;
+        border-bottom-right-radius: 40px;
+        ul{
+            li{
+                list-style-type: none;
+   		    	font-family: $fontSecondary;
+    		    color: $keyColor;
+                font-size: $textXl;
+                @media (min-width: 280px) and (max-width: 360px){
+                    font-size: $textMd;
+                }
+                a{
+                    text-decoration: none;
+    			    color: white;
+			        &:hover {
+			        font-weight: $textBold;
+			        }
+                }
+            }
+        }
+    }
+    figure{
+        margin: 10px 0;
+        background-color: black;
+        border-radius: 30px;
+        &:hover{
+            transform: scale(1.02);
+            cursor: pointer;
+        }
+        img{
+            border-radius: 30px;
+    	    padding: 14px 14px; 
+    		width: 280px;
+            @media (min-width: 280px) and (max-width: 360px){
+                width: 200px;
+            }
+        }
+        figcaption{
+            color: white;
+			padding: 5px 0;
+    		text-align: center;
+        }
+        p{
+            color: $secondaryColor;
+    		padding: 5px 5px;
+  		    text-align: center;
+        }
+    }
+    .descuento{
+        background-color: rgba(242, 27, 145, .5);
+    }
+    .pagos{
+        background-color: $mainColor;
+    }
+}

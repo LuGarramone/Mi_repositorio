@@ -1,0 +1,20 @@
+#faqs{
+    font-size: $textMd;
+    .cuadro1{
+        @include cuadro ($border1, $mainColor);
+        border-radius: 50px;
+    }
+    .cuadro2{
+       @extend .info2;
+        border-radius: 50px;
+    }
+    #textInfo{
+        line-height: $textLine2;
+    }
+    .text-pink{
+        color: map-get($map: $paleta, $key: 'tres');
+    }
+    .text-violet{
+        color: map-get($map: $paleta, $key: 'cuatro');
+    }
+}

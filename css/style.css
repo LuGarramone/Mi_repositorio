@@ -131,22 +131,10 @@ h2 {
     grid-template-rows: repeat(9, auto);
     grid-template-areas: "nav" "header" "info" "diseños" "destacados" "carteles" "veladores" "newsletter" "footer"; } }
 
-#tienda .secondNav {
-  background-color: rgba(0, 0, 0, 0.8);
-  border-bottom-right-radius: 40px; }
-  #tienda .secondNav ul li {
-    list-style-type: none;
-    font-family: "Bree Serif", serif;
-    color: #f21b91;
-    font-size: 1.5rem; }
-    @media (min-width: 280px) and (max-width: 360px) {
-      #tienda .secondNav ul li {
-        font-size: 1.2rem; } }
-    #tienda .secondNav ul li a {
-      text-decoration: none;
-      color: white; }
-      #tienda .secondNav ul li a:hover {
-        font-weight: 400; }
+#tienda .tienda {
+  background-color: black;
+  list-style-type: none;
+  font-family: "Bree Serif", serif; }
 
 #tienda figure {
   margin: 10px 0;
@@ -167,9 +155,35 @@ h2 {
     padding: 5px 0;
     text-align: center; }
   #tienda figure p {
-    color: #b073d9;
+    color: white;
     padding: 5px 5px;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400; }
+
+#tienda .pink {
+  border: solid #f21b91 1.5px;
+  color: #f21b91;
+  background-color: black;
+  transition: background 0.2s;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px; }
+  #tienda .pink:hover {
+    background-color: #f21b91;
+    color: white;
+    cursor: pointer; }
+
+#tienda .violet {
+  border: solid #b073d9 1.5px;
+  border-radius: 20px;
+  color: #b073d9;
+  background-color: black;
+  transition: background 0.2s; }
+  #tienda .violet:hover {
+    background-color: #b073d9;
+    color: black;
+    cursor: pointer; }
 
 #tienda .descuento {
   background-color: rgba(242, 27, 145, 0.5); }

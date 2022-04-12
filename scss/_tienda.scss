@@ -1,26 +1,10 @@
 #tienda{
-    .secondNav{
-        background-color: $mainColor;
-        border-bottom-right-radius: 40px;
-        ul{
-            li{
-                list-style-type: none;
-   		    	font-family: $fontSecondary;
-    		    color: $keyColor;
-                font-size: $textXl;
-                @media (min-width: 280px) and (max-width: 360px){
-                    font-size: $textMd;
-                }
-                a{
-                    text-decoration: none;
-    			    color: white;
-			        &:hover {
-			        font-weight: $textBold;
-			        }
-                }
-            }
-        }
+    .tienda{
+        background-color: black;
+        list-style-type: none;
+   		font-family: $fontSecondary;
     }
+
     figure{
         margin: 10px 0;
         background-color: black;
@@ -31,23 +15,49 @@
         }
         img{
             border-radius: 30px;
-    	    padding: 14px 14px; 
-    		width: 280px;
+            padding: 14px 14px; 
+            width: 280px;
             @media (min-width: 280px) and (max-width: 360px){
-                width: 200px;
+                 width: 200px;
             }
         }
         figcaption{
             color: white;
-			padding: 5px 0;
-    		text-align: center;
+            padding: 5px 0;
+            text-align: center;
         }
         p{
-            color: $secondaryColor;
-    		padding: 5px 5px;
-  		    text-align: center;
+            color: white;
+            padding: 5px 5px;
+            text-align: center;
+            font-size: $textMd;
+            font-weight: $textBold;
         }
     }
+    .pink{
+        @include boton ($border, $keyColor);
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        &:hover{
+            background-color: $keyColor;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    .violet{
+        border: $border $secondaryColor 1.5px;
+        border-radius: 20px;
+        color: $secondaryColor;
+        background-color: black;
+        transition: background 0.2s;
+        &:hover{
+            background-color: $secondaryColor;
+            color: black;
+            cursor: pointer;
+        }
+    }
+
     .descuento{
         background-color: rgba(242, 27, 145, .5);
     }

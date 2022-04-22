@@ -1,20 +1,18 @@
 #faqs{
-    font-size: $textMd;
-    .cuadro1{
-        @include cuadro ($border1, $mainColor);
-        border-radius: 50px;
+    .accordion-button {
+        color: white !important;
+        background-color: black !important;
     }
-    .cuadro2{
-       @extend .info2;
-        border-radius: 50px;
+    .accordion-item {
+        background-color: map-get($map:$paleta, $key:tres) !important;
     }
-    #textInfo{
-        line-height: $textLine2;
+    .accordion-body {
+        color: white;
+        font-size: $textMd;
+        font-family: $fontMain;
     }
-    .text-pink{
-        color: map-get($map: $paleta, $key: 'tres');
+    #envio .accordion-item{
+        background-color: map-get($map:$paleta, $key:dos) !important;
     }
-    .text-violet{
-        color: map-get($map: $paleta, $key: 'cuatro');
-    }
+
 }

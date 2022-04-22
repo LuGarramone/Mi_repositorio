@@ -1,8 +1,24 @@
 #tienda{
-    .tienda{
+    .segundaNav{
         background-color: black;
-        list-style-type: none;
-   		font-family: $fontSecondary;
+    }
+    .nav-tabs{
+        border-bottom: 1px solid $keyColor !important;
+    }
+    .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+        border-color: $keyColor !important;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: black !important;
+        font-family: $fontSecondary;
+        font-weight: $textBold;
+        background-color: $keyColor !important;
+        border-color: $keyColor !important;
+    }
+    .nav-link {
+        color: $keyColor !important;
+        font-family: $fontSecondary;
+        font-weight: $textBold;
     }
 
     figure{
@@ -34,17 +50,6 @@
             font-weight: $textBold;
         }
     }
-    .pink{
-        @include boton ($border, $keyColor);
-        border-radius: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-        &:hover{
-            background-color: $keyColor;
-            color: white;
-            cursor: pointer;
-        }
-    }
     .violet{
         border: $border $secondaryColor 1.5px;
         border-radius: 20px;
@@ -57,7 +62,6 @@
             cursor: pointer;
         }
     }
-
     .descuento{
         background-color: rgba(242, 27, 145, .5);
     }

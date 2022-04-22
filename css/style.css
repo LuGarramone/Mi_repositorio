@@ -20,7 +20,7 @@ h2 {
   font-family: 'Bree Serif', serif;
   color: #b073d9; }
 
-.info2, #nosotros .neon, #faqs .cuadro2 {
+.info2, #nosotros .neon {
   border: dotted 1.5px #b073d9;
   background-color: rgba(0, 0, 0, 0.8); }
 
@@ -131,10 +131,26 @@ h2 {
     grid-template-rows: repeat(9, auto);
     grid-template-areas: "nav" "header" "info" "diseños" "destacados" "carteles" "veladores" "newsletter" "footer"; } }
 
-#tienda .tienda {
-  background-color: black;
-  list-style-type: none;
-  font-family: "Bree Serif", serif; }
+#tienda .segundaNav {
+  background-color: black; }
+
+#tienda .nav-tabs {
+  border-bottom: 1px solid #f21b91 !important; }
+
+#tienda .nav-tabs .nav-link:focus, #tienda .nav-tabs .nav-link:hover {
+  border-color: #f21b91 !important; }
+
+#tienda .nav-tabs .nav-item.show .nav-link, #tienda .nav-tabs .nav-link.active {
+  color: black !important;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  background-color: #f21b91 !important;
+  border-color: #f21b91 !important; }
+
+#tienda .nav-link {
+  color: #f21b91 !important;
+  font-family: "Bree Serif", serif;
+  font-weight: 400; }
 
 #tienda figure {
   margin: 10px 0;
@@ -160,19 +176,6 @@ h2 {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 400; }
-
-#tienda .pink {
-  border: solid #f21b91 1.5px;
-  color: #f21b91;
-  background-color: black;
-  transition: background 0.2s;
-  border-radius: 20px;
-  margin-left: 10px;
-  margin-right: 10px; }
-  #tienda .pink:hover {
-    background-color: #f21b91;
-    color: white;
-    cursor: pointer; }
 
 #tienda .violet {
   border: solid #b073d9 1.5px;
@@ -228,20 +231,20 @@ h2 {
     #nosotros .neon p {
       margin-bottom: 0; }
 
-#faqs {
-  font-size: 1.2rem; }
-  #faqs .cuadro1 {
-    border: dotted #f21b91 1.5px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 50px; }
-  #faqs .cuadro2 {
-    border-radius: 50px; }
-  #faqs #textInfo {
-    line-height: 1.2; }
-  #faqs .text-pink {
-    color: #fd8fcc; }
-  #faqs .text-violet {
-    color: #dfb3fd; }
+#faqs .accordion-button {
+  color: white !important;
+  background-color: black !important; }
+
+#faqs .accordion-item {
+  background-color: rgba(242, 27, 145, 0.6) !important; }
+
+#faqs .accordion-body {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Josefin Sans", sans-serif; }
+
+#faqs #envio .accordion-item {
+  background-color: #b073d9 !important; }
 
 #contactoMain {
   font-size: 1.2rem; }

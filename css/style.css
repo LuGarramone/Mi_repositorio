@@ -20,7 +20,7 @@ h2 {
   font-family: 'Bree Serif', serif;
   color: #b073d9; }
 
-.info2, #nosotros .neon {
+.info2 {
   border: dotted 1.5px #b073d9;
   background-color: rgba(0, 0, 0, 0.8); }
 
@@ -135,22 +135,22 @@ h2 {
   background-color: black; }
 
 #tienda .nav-tabs {
-  border-bottom: 1px solid #f21b91 !important; }
-
-#tienda .nav-tabs .nav-link:focus, #tienda .nav-tabs .nav-link:hover {
-  border-color: #f21b91 !important; }
+  border-bottom: 1px solid #b073d9;
+  border-color: #b073d9; }
 
 #tienda .nav-tabs .nav-item.show .nav-link, #tienda .nav-tabs .nav-link.active {
-  color: black !important;
+  color: white;
   font-family: "Bree Serif", serif;
   font-weight: 400;
-  background-color: #f21b91 !important;
-  border-color: #f21b91 !important; }
+  background-color: #b073d9;
+  border-color: #b073d9; }
 
 #tienda .nav-link {
-  color: #f21b91 !important;
+  color: white;
   font-family: "Bree Serif", serif;
-  font-weight: 400; }
+  font-weight: 400;
+  border-color: #b073d9;
+  background-color: #8f6ea544; }
 
 #tienda figure {
   margin: 10px 0;
@@ -185,7 +185,7 @@ h2 {
   transition: background 0.2s; }
   #tienda .violet:hover {
     background-color: #b073d9;
-    color: black;
+    color: white;
     cursor: pointer; }
 
 #tienda .descuento {
@@ -199,8 +199,7 @@ h2 {
   font-size: 1.2rem; }
   #nosotros .info1 {
     border: dotted #f21b91 1.5px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 50px; }
+    background-color: rgba(0, 0, 0, 0.8); }
   #nosotros .ventajas {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px 10px;
@@ -220,31 +219,37 @@ h2 {
     #nosotros #ventajas {
       margin-left: 15px;
       margin-right: 15px; } }
-  #nosotros .imgCuadros {
-    padding-bottom: 40px; }
-  #nosotros .imgNeon {
-    width: 150px;
-    border-radius: 150px;
-    border: solid white 1.5px; }
-  #nosotros .neon {
-    border-radius: 50px; }
-    #nosotros .neon p {
-      margin-bottom: 0; }
+  #nosotros #tipos-neon {
+    background-color: rgba(242, 27, 145, 0.25);
+    border: dotted 1.5px #f21b91; }
+    #nosotros #tipos-neon ul li {
+      list-style: none; }
 
 #faqs .accordion-button {
-  color: white !important;
-  background-color: black !important; }
+  color: white;
+  background-color: black; }
 
 #faqs .accordion-item {
-  background-color: rgba(242, 27, 145, 0.6) !important; }
+  background-color: rgba(242, 27, 145, 0.6); }
+
+#faqs .accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
 
 #faqs .accordion-body {
   color: white;
   font-size: 1.2rem;
   font-family: "Josefin Sans", sans-serif; }
 
-#faqs #envio .accordion-item {
-  background-color: #b073d9 !important; }
+#faqs .accordion-item-envio {
+  background-color: #b073d99f;
+  border: 1px solid #b073d99f; }
+
+#faqs .accordion-flush .accordion-item-envio {
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  border-bottom: 0; }
 
 #contactoMain {
   font-size: 1.2rem; }

@@ -3,7 +3,6 @@
     font-size: $textMd;
     .info1{
         @include cuadro ($border1, $mainColor);
-        border-radius: 50px;
     }
     .ventajas{
         background-color: $mainColor;
@@ -29,19 +28,11 @@
             margin-right: 15px;
         }
     }
-    .imgCuadros{
-        padding-bottom: 40px;
-    }
-    .imgNeon{
-        width: 150px;
-    	border-radius: 150px;
-    	border: solid white 1.5px;
-    }
-    .neon{
-        @extend .info2;
-            border-radius: 50px;
-        p{
-            margin-bottom: 0;
+    #tipos-neon{
+        background-color: rgba(242, 27, 145, 0.25);
+        border: dotted 1.5px $keyColor;
+        ul li {
+            list-style: none;
         }
     }
 }

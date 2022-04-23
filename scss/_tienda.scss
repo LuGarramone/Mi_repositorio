@@ -3,22 +3,23 @@
         background-color: black;
     }
     .nav-tabs{
-        border-bottom: 1px solid $keyColor !important;
+        border-bottom: 1px solid $secondaryColor ;
+        border-color: $secondaryColor;
     }
-    .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-        border-color: $keyColor !important;
-    }
+
     .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-        color: black !important;
+        color: white;
         font-family: $fontSecondary;
         font-weight: $textBold;
-        background-color: $keyColor !important;
-        border-color: $keyColor !important;
+        background-color: $secondaryColor;
+        border-color: $secondaryColor;
     }
     .nav-link {
-        color: $keyColor !important;
+        color: white;
         font-family: $fontSecondary;
         font-weight: $textBold;
+        border-color: $secondaryColor;
+        background-color: map-get($map: $paleta, $key:cinco);
     }
 
     figure{
@@ -58,7 +59,7 @@
         transition: background 0.2s;
         &:hover{
             background-color: $secondaryColor;
-            color: black;
+            color: white;
             cursor: pointer;
         }
     }

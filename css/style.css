@@ -135,7 +135,7 @@ h2 {
   background-color: black; }
 
 #tienda .nav-tabs {
-  border-bottom: 1px solid #b073d9;
+  border-bottom: 1px solid;
   border-color: #b073d9; }
 
 #tienda .nav-tabs .nav-item.show .nav-link, #tienda .nav-tabs .nav-link.active {
@@ -230,7 +230,7 @@ h2 {
   background-color: black; }
 
 #faqs .accordion-item {
-  background-color: rgba(242, 27, 145, 0.6); }
+  background-color: rgba(242, 27, 145, 0.404); }
 
 #faqs .accordion-item:last-of-type .accordion-button.collapsed {
   border-bottom-right-radius: 0;
@@ -250,6 +250,9 @@ h2 {
   border-left: 0;
   border-radius: 0;
   border-bottom: 0; }
+
+#faqs .accordion-button::after {
+  background-image: url(../pics/flecha.svg); }
 
 #contactoMain {
   font-size: 1.2rem; }

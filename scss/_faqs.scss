@@ -25,4 +25,7 @@
         border-radius: 0;
         border-bottom: 0;
     }
+    .accordion-button::after {
+        background-image: url(../pics/flecha.svg);
+    }
 }

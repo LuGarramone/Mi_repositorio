@@ -1,1 +1,1 @@
-Hice cambios en el estilo y los textos, tuve que crear el repositorio de nuevo porque tuve problemas. 
+Proyecto final: Desarrollo web de la página "WONDERLED" que se trata de una tienda online de luces de neón led, en forma de carteles y veladores.
